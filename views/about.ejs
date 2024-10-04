@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="/stylesheets/services.css">
+</head>
+
+<body>
+    <div class="section__container class__container" id="class">
+        <h2 class="section__header">Shortest Job First</h2>
+        <p class="section__description ">
+
+            Shortest Job First (SJF) is a CPU scheduling algorithm that selects the process with the smallest execution
+            time for execution next. It aims to minimize the average waiting time of processes by prioritizing shorter
+            jobs, allowing them to complete first. SJF scheduling can be either preemptive or non-preemptive, with the
+            preemptive variant known as Shortest Remaining Time First (SRTF). While SJF can significantly reduce waiting
+            times for processes with short execution times, it may lead to starvation for longer processes and requires
+            accurate prediction or estimation of process burst times, which might not always be feasible in real-world
+            scenarios.
+        </p>
+        <br>
+        <h5 class="section__header1">Advantages</h5>
+        <br>
+        <ul class="list">
+            <li class="section__description ">Reduced average waiting time.</li>
+            <li class="section__description ">Improved turnaround time.</li>
+        </ul>
+        <br>
+        <h5 class="section__header1">Disadvantages</h5>
+        <br>
+        <ul class="list">
+            <li class="section__description ">Lack of predictability.</li>
+            <li class="section__description ">Risk of starvation.</li>
+            <li class="section__description ">Preemption overhead.</li>
+        </ul>
+        <br>
+        <h2 class="section__header">Dining Philosophers Problem</h2>
+        <p class="section__description ">
+
+
+            The Dining Philosophers Problem is a classic concurrency problem that illustrates challenges in resource
+            allocation and deadlock avoidance in distributed systems. It imagines a scenario where a group of
+            philosophers sits around a dining table with a bowl of spaghetti in front of each of them, and they require
+            two forks to eat. The problem arises when each philosopher simultaneously grabs the fork to their left,
+            leading to a deadlock where no philosopher can proceed because they are all waiting for a fork held by
+            another. Solving this problem involves implementing strategies such as mutex locks, semaphores, or other
+            synchronization techniques to ensure that philosophers can access forks in a coordinated manner, avoiding
+            deadlock while enabling fair access to resources for all philosophers.
+        </p>
+
+        <br>
+        <h5 class="section__header1">Advantages</h5>
+        <br>
+        <ul class="list">
+            <li class="section__description ">Illustrates concurrency issues: The Dining Philosophers Problem serves as
+                a practical example for understanding and addressing challenges related to resource allocation and
+                concurrency in distributed systems.</li>
+
+        </ul>
+        <br>
+        <h5 class="section__header1">Disadvantages</h5>
+        <br>
+        <ul class="list">
+            <li class="section__description ">Simplified scenario: While useful for illustrating fundamental concurrency
+                issues, the problem oversimplifies real-world complexities and may not directly translate to all
+                distributed computing scenarios.
+
+            </li>
+
+        </ul>
+        <br>
+        <h2 class="section__header">Look disk scheduling algorithm</h2>
+        <p class="section__description ">
+
+
+            The LOOK disk scheduling algorithm is a variant of the SCAN algorithm used for disk scheduling. Similar to
+            SCAN, LOOK moves the disk arm from one end of the disk to the other, serving requests along the way, but it
+            does not scan the entire disk if there are no pending requests in a certain direction. Instead, LOOK
+            reverses direction when there are no more pending requests in the current direction, optimizing disk arm
+            movement and reducing average seek time. LOOK is efficient and provides better performance in scenarios
+            where the distribution of disk requests is uneven, as it focuses on pending requests within a limited range
+            of the disk, minimizing wasted movement and enhancing disk access efficiency.
+        </p>
+        <br>
+        <h5 class="section__header1">Advantages</h5>
+        <br>
+        <ul class="list">
+            <li class="section__description ">Reduced seek time.</li>
+            <li class="section__description ">Improved efficiency.</li>
+
+        </ul>
+        <br>
+        <h5 class="section__header1">Disadvantages</h5>
+        <br>
+        <ul class="list">
+            <li class="section__description ">Potential for starvation.</li>
+            <li class="section__description ">Lack of fairness.</li>
+        </ul>
+        <br>
+        <h2 class="section__header">First-In-First-Out page replacement algorithm</h2>
+        <p class="section__description ">
+
+
+
+        <p class="section__description ">
+
+
+
+            The First-In-First-Out (FIFO) page replacement algorithm is one of the simplest strategies used in operating
+            systems to manage memory. It works by evicting the oldest page in memory, which was brought in first, when a
+            new page needs to be loaded into memory. FIFO maintains a queue of pages in memory and removes the page at
+            the front of the queue when a page fault occurs, making room for the new page. While FIFO is easy to
+            implement and understand, it suffers from the "Belady's anomaly," where increasing the number of page frames
+            can lead to an increase in page faults. Additionally, FIFO may not always result in the most optimal use of
+            memory, as it does not consider the frequency of page accesses or the likelihood of future page references.
+        </p>
+        <br>
+        <h5 class="section__header1">Advantages</h5>
+        <br>
+        <ul class="list">
+            <li class="section__description ">Simplicity</li>
+            <li class="section__description ">Fairness</li>
+
+        </ul>
+        <br>
+        <h5 class="section__header1">Disadvantages</h5>
+        <br>
+        <ul class="list">
+            <li class="section__description ">Belady's anomaly</li>
+            <li class="section__description ">Poor performance with varying access patterns</li>
+        </ul>
+        </p>
+     
+    </div>
+</body>
+
+</html>

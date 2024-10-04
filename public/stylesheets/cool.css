@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0,0.1)),url('/images/good.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+form{
+    border-radius: 20px;
+    margin-top: 50px !important;
+    width: 34% !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+}
+
+.container{
+    margin-top: 100px;
+    display: flex;
+}
+
+h1{
+    color: #6a91e7;
+}
+
+.btn-primary{
+    background-color: #6a91e7;
+    border: none;
+
+}
+
+.btn-primary:hover{
+    background-color: #3069e4;
+}
+
+.btn-danger{
+    background-color: #6a91e7;
+   border: none;
+}
+
+.btn-danger:hover{
+    background-color: rgba(129, 2, 255, 0.425);
+}
+
+.form-label{
+    color: white;
+}
+
+.mt-5{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+table, th, td {
+    
+    color: white;
+    margin: 18px 2px;
+    padding: 6px 15px;
+    /* border: 1px solid white; */
+    border-collapse: collapse;
+    /* border-radius: 20px; */
+}
+
+.avg{
+    margin-top: 20px;
+    margin-left: 76px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 190px;
+    width: 1290px;
+    border-radius: 20px;
+}
+
+.avg p{
+    color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 3px 10px;
+}
+
+.back{
+    margin-top: 30px;
+    margin-left: 80px;
+    padding: 5px 35px;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-primary {
+    margin-bottom: 10px;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #fca90d;
+    --bs-btn-border-color: #6a91e7;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #6a91e7;
+    --bs-btn-hover-border-color: #6a91e7;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #6a91e7;
+    --bs-btn-active-border-color: #6a91e7;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #6a91e7;
+    --bs-btn-disabled-border-color: #6a91e7;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+}
+
+.graph{
+    border-radius: 10px;
+}
+
+.seek_operation{
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

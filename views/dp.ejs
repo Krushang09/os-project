@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/dp.css">
+</head>
+
+<body>
+    <div class="section__container class__container" id="class">
+        <h2 class="section__header">Dining Philosophers Problem</h2>
+        <p class="section__description ">
+            
+The Dining Philosophers Problem is a classic computer science conundrum that illustrates synchronization issues in concurrent programming. It imagines a group of philosophers sitting around a dining table with a bowl of spaghetti. Each philosopher must alternate between thinking and eating. However, they share a finite number of chopsticks placed between them, necessitating the use of two chopsticks to eat. The challenge arises in preventing deadlock and starvation, where philosophers may become stuck waiting for chopsticks held by their neighbors. Various solutions have been proposed, employing techniques such as resource allocation algorithms, semaphores, and mutexes to ensure fair access to resources and prevent deadlock, thus facilitating efficient parallel processing.
+        </p>
+        <div class="class__grid">
+            <div class="class__card">
+                <!-- <img src="dot-bg.png" alt="bg" class="class__bg"> -->
+                <img src="https://images.unsplash.com/photo-1622411432975-dbd2a4869bf5?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="class">
+                <div class="class__content">
+                    <p id="0">Philosopher 1</p>
+                </div>
+            </div>
+            <div class="class__card">
+                <!-- <img src="dot-bg.png" alt="bg" class="class__bg"> -->
+                <img src="https://images.unsplash.com/photo-1644849270312-90373177665d?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="di" alt="class">
+                <div class="class__content">
+                    <p id="1">Philosopher 2</p>
+                </div>
+            </div>
+            <div class="class__card">
+                <!-- <img src="dot-bg.png" alt="bg" class="class__bg"> -->
+                <img src="https://images.unsplash.com/photo-1593240637899-5fc06c754c2b?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="disk" alt="class">
+                <div class="class__content">
+                    <p id="2">Philosopher 3</p>
+                </div>
+            </div>
+            <div class="class__card">
+                <!-- <img src="dot-bg.png" alt="bg" class="class__bg"> -->
+                <img src="https://images.unsplash.com/photo-1648690833625-e37c13d6c914?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="page" alt="class">
+                <div class="class__content">
+                    <p id="3">Philosopher 4</p>
+                </div>
+            </div>
+            <div class="class__card">
+                <!-- <img src="dot-bg.png" alt="bg" class="class__bg"> -->
+                <img src="https://images.unsplash.com/photo-1648698450122-e8a06535bce3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="page" alt="class">
+                <div class="class__content">
+                    <p id="4">Philosopher 5</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn-btn" id="statebtn" onclick="state()">START</button>
+        
+        <a href="/services/"><button class="btn-btn" id="statebtn">Back</button></a>
+
+    </div>
+
+    <script src="/javascripts/DPF.js"></script>
+</body>
+
+</html>
